@@ -2,8 +2,9 @@ div.getalhouder {
     position: absolute;
     height: 150px;
     width: 150px;
-    float: left;
+    float: right;
     border: 1px solid black;
+    margin-left: 20%;
 }
 
 p.getal {
