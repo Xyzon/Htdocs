@@ -16,7 +16,7 @@ function createStartButton() {
         puntenTellen = true;
         getalhouders = document.getElementsByClassName("getalhouder");
         for(var x = 0; x < getalhouders.length; x++) {
-            getalhouders[x].style.color = "white";
+            getalhouders[x].style.color = "#71216e";
         }
     })
 }
@@ -53,8 +53,8 @@ function createGetalhouder(i) {
 
 function appendGetalhouders() {
     var i = 0;
-    for (var y = 1; y <= 4; y++) {
-        for (var x = 1; x <= 4; x++) {
+    for (var y = 0; y <= 3; y++) {
+        for (var x = 0; x <= 3; x++) {
             getalhouder = createGetalhouder(i)
             getalhouder.style.left = (x * 150) + "px";
             getalhouder.style.top = (y * 150) + "px";
@@ -87,11 +87,11 @@ function checkClick(i) {
         }
         showPunten(aantalPunten);
         getalhouder = document.getElementById("getalhouder"+i);
-        getalhouder.style.color = "red";
+        getalhouder.style.color = "hotpink";
     } else {
         getalhouders = document.getElementsByClassName("getalhouder");
         for(var x = 0; x < getalhouders.length; x++) {
-            getalhouders[x].style.color = "black";
+            getalhouders[x].style.color = "hotpink";
         }
     }
 }

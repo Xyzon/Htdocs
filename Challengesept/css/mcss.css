@@ -1,16 +1,44 @@
-@media all and (min-width: 560px) {
+@font-face {
+    font-family: 'Merriweather', serif;
+}
 
+div {
+    font-family: 'Merriweather', serif;
+}
+
+@media all and (min-width: 560px) {
 
     .lol {
         width: 50%;
         height: 50%;
         float: left;
     }
+
     .video-container {
         display: none;
     }
 
+    .videoWrapper {
+        position: relative;
+        padding-bottom: 58.25%; /* 16:9 */
+        padding-top: 25px;
+        height: 0;
+    }
+
+    .videoWrapper iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 80%;
+    }
+
+    iframe {
+        padding: 10px;
+    }
+
 }
+
 @media all and (max-width: 560px) {
 
     .tabletpicture {
@@ -20,57 +48,30 @@
         float: left;
     }
 
-
 }
 
-.tabletpicture{
-    padding:5px;
+.tabletpicture {
+    padding: 5px;
 }
 
 .lol {
-    padding:5px;
+    padding: 5px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@font-face {
-    font-family: 'Merriweather', serif;
+#footer-row {
+    margin-top: 80px;
+    padding: 1.2em 0;
+    background: hotpink;
+    bottom: 0;
+    margin-right: -33px;
+    font-family: "Fjalla One", Verdana, Geneva, sans-serif;
+    font-size: 0.95em;
+    text-transform: uppercase;
 }
 
-div {
-    font-family: 'Merriweather', serif;
+#loginKnop {
+    width: 50px;
+    float: right;
 }
 
 .container {
@@ -81,7 +82,6 @@ div {
     float: left;
 }
 
-
 .video-container {
     position: relative;
     padding-bottom: 56.25%;
@@ -91,29 +91,98 @@ div {
 
 
 
+
 /*Color Themes*/
 
-.w3-theme-l5 {color:#000 !important; background-color:#fcf5fc !important}
-.w3-theme-l4 {color:#000 !important; background-color:#f5ddf4 !important}
-.w3-theme-l3 {color:#000 !important; background-color:#ebbbea !important}
-.w3-theme-l2 {color:#000 !important; background-color:#e199df !important}
-.w3-theme-l1 {color:#fff !important; background-color:#d877d4 !important}
-.w3-theme-d1 {color:#fff !important; background-color:#c73fc3 !important}
-.w3-theme-d2 {color:#fff !important; background-color:#b434b0 !important}
-.w3-theme-d3 {color:#fff !important; background-color:#9e2e9a !important}
-.w3-theme-d4 {color:#fff !important; background-color:#872784 !important}
-.w3-theme-d5 {color:#fff !important; background-color:#71216e !important}
+.w3-theme-l5 {
+    color: #000 !important;
+    background-color: #fcf5fc !important
+}
 
-.w3-theme-light {color:#000 !important; background-color:#fcf5fc !important}
-.w3-theme-dark {color:#fff !important; background-color:#71216e !important}
-.w3-theme-action {color:#fff !important; background-color:#71216e !important}
+.w3-theme-l4 {
+    color: #000 !important;
+    background-color: #f5ddf4 !important
+}
 
-.w3-theme {color:#fff !important; background-color:#ce55ca !important}
-.w3-text-theme {color:#ce55ca !important}
-.w3-border-theme {border-color:#ce55ca !important}
+.w3-theme-l3 {
+    color: #000 !important;
+    background-color: #ebbbea !important
+}
 
-.w3-hover-theme:hover {color:#fff !important; background-color:#ce55ca !important}
-.w3-hover-text-theme:hover {color:#ce55ca !important}
-.w3-hover-border-theme:hover {border-color:#ce55ca !important}
+.w3-theme-l2 {
+    color: #000 !important;
+    background-color: #e199df !important
+}
+
+.w3-theme-l1 {
+    color: #fff !important;
+    background-color: #d877d4 !important
+}
+
+.w3-theme-d1 {
+    color: #fff !important;
+    background-color: #c73fc3 !important
+}
+
+.w3-theme-d2 {
+    color: #fff !important;
+    background-color: #b434b0 !important
+}
+
+.w3-theme-d3 {
+    color: #fff !important;
+    background-color: #9e2e9a !important
+}
+
+.w3-theme-d4 {
+    color: #fff !important;
+    background-color: #872784 !important
+}
+
+.w3-theme-d5 {
+    color: #fff !important;
+    background-color: #71216e !important
+}
+
+.w3-theme-light {
+    color: #000 !important;
+    background-color: #fcf5fc !important
+}
+
+.w3-theme-dark {
+    color: #fff !important;
+    background-color: #71216e !important
+}
+
+.w3-theme-action {
+    color: #fff !important;
+    background-color: #71216e !important
+}
+
+.w3-theme {
+    color: #fff !important;
+    background-color: #ce55ca !important
+}
+
+.w3-text-theme {
+    color: #ce55ca !important
+}
+
+.w3-border-theme {
+    border-color: #ce55ca !important
+}
+
+.w3-hover-theme:hover {
+    color: #fff !important;
+    background-color: #ce55ca !important
+}
+
+.w3-hover-text-theme:hover {
+    color: #ce55ca !important
+}
+
+.w3-hover-border-theme:hover {
+    border-color: #ce55ca !important
+}
 
 
