@@ -1,0 +1,20 @@
+/*Body*/
+body {
+    background-image: url("img/wallpaper.jpg");
+}
+
+.navbar {
+    margin: 1%;
+}
+
+.dropdown-menu {
+   background-color: darkgrey;
+}
+
+.jumbotron {
+    background-image: url("img/header.png");
+    margin-left:1%;
+}
+.display-4 {
+    Margin-left: 40%;
+}
