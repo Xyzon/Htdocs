@@ -9,7 +9,7 @@
 
 session_start();
 //connect naar database
-$db = mysqli_connect("localhost", "root", "", "loginchl");
+$db = mysqli_connect("localhost", "root", "", "database1");
 if (isset($_POST['login_btn'])) {
     $username = ($_POST['username']);
     $password = ($_POST['password']);

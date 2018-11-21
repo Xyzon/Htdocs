@@ -8,17 +8,21 @@
 
 # source guide wat ik heb gebruikt: https://www.youtube.com/watch?v=lGYixKGiY7Y
 session_start();
+$username = "";
+$email = "";
+
+
 //connect naar database
-$db = mysqli_connect("localhost", "root", "", "authentication");
+$db = mysqli_connect("localhost", "root", "", "database1");
 if (isset($_POST['register_btn'])) {
-    $username = mysql_real_escape_string($_POST['username']);
-    $email = mysql_real_escape_string($_POST['email']);
-    $password = mysql_real_escape_string($_POST['password']);
-    $password2 = mysql_real_escape_string($_POST['password2']);
+    $username = mysqli_real_escape_string($_POST['username']);
+    $email = mysqli_real_escape_string($_POST['email']);
+    $password = mysqli_real_escape_string($_POST['password']);
+    $password2 = mysqli_real_escape_string($_POST['password2']);
     if ($password == $password2) {
         // create user
         $password = md5($password); //hash password before storing for security purposes
-        $sql = "INSERT INTO users(username, email, password) VALUES('$username', '$email', '$password')";
+        $sql = "INSERT INTO users(username, email, password) VALUES('$username','$email','$password')";
         mysqli_query($db, $sql);
         $_SESSION['message'] = "You are now logged in";
         $_SESSION['username'] = $username;
